@@ -20,7 +20,7 @@ Public Class ConvertToHTML
             outputfile = Environment.CurrentDirectory + "\output.html"
         End If
 
-        html.Save(outputfile, SaveOptions.DisableFormatting) 'Set SaveOptions.None to preserve whitespace
+        html.Save(outputfile, SaveOptions.None)
     End Sub
 
     Function GetRow(i As MyEvent) As XElement
