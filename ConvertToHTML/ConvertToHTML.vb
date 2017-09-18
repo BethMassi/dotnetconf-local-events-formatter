@@ -20,7 +20,7 @@ Public Class ConvertToHTML
             outputfile = Environment.CurrentDirectory + "\output.html"
         End If
 
-        html.Save(outputfile, SaveOptions.None)
+        html.Save(outputfile, SaveOptions.DisableFormatting)
     End Sub
 
     Function GetRow(i As MyEvent) As XElement
